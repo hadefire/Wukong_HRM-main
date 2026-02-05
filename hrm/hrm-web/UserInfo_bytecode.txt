@@ -1,0 +1,247 @@
+﻿Compiled from "UserInfo.java"
+public class com.kakarote.common.entity.UserInfo implements java.io.Serializable {
+  private static final long serialVersionUID;
+
+  private java.lang.Long userId;
+
+  private java.lang.Long parentId;
+
+  private java.lang.Long deptId;
+
+  private java.lang.String username;
+
+  private java.lang.String mobile;
+
+  private java.lang.String email;
+
+  private java.lang.String userImg;
+
+  private java.lang.String nickname;
+
+  private com.kakarote.common.constant.LoginTypeEnum loginType;
+
+  private java.time.LocalDateTime loginTime;
+
+  private com.kakarote.common.constant.UserStatusEnum userStatus;
+
+  private java.lang.Long poolId;
+
+  private boolean admin;
+
+  private java.util.List<java.lang.Long> roles;
+
+  public java.lang.String toString();
+    Code:
+       0: aload_0
+       1: invokestatic  #1                  // Method com/alibaba/fastjson/JSON.toJSONString:(Ljava/lang/Object;)Ljava/lang/String;
+       4: areturn
+
+  public com.kakarote.common.entity.UserInfo();
+    Code:
+       0: aload_0
+       1: invokespecial #2                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: lconst_0
+       6: invokestatic  #3                  // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+       9: putfield      #4                  // Field userId:Ljava/lang/Long;
+      12: aload_0
+      13: ldc           #5                  // String
+      15: putfield      #6                  // Field nickname:Ljava/lang/String;
+      18: return
+
+  public java.lang.Long getUserId();
+    Code:
+       0: aload_0
+       1: getfield      #4                  // Field userId:Ljava/lang/Long;
+       4: areturn
+
+  public java.lang.Long getParentId();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field parentId:Ljava/lang/Long;
+       4: areturn
+
+  public java.lang.Long getDeptId();
+    Code:
+       0: aload_0
+       1: getfield      #8                  // Field deptId:Ljava/lang/Long;
+       4: areturn
+
+  public java.lang.String getUsername();
+    Code:
+       0: aload_0
+       1: getfield      #9                  // Field username:Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String getMobile();
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field mobile:Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String getEmail();
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field email:Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String getUserImg();
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field userImg:Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String getNickname();
+    Code:
+       0: aload_0
+       1: getfield      #6                  // Field nickname:Ljava/lang/String;
+       4: areturn
+
+  public com.kakarote.common.constant.LoginTypeEnum getLoginType();
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field loginType:Lcom/kakarote/common/constant/LoginTypeEnum;
+       4: areturn
+
+  public java.time.LocalDateTime getLoginTime();
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field loginTime:Ljava/time/LocalDateTime;
+       4: areturn
+
+  public com.kakarote.common.constant.UserStatusEnum getUserStatus();
+    Code:
+       0: aload_0
+       1: getfield      #15                 // Field userStatus:Lcom/kakarote/common/constant/UserStatusEnum;
+       4: areturn
+
+  public java.lang.Long getPoolId();
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field poolId:Ljava/lang/Long;
+       4: areturn
+
+  public boolean isAdmin();
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field admin:Z
+       4: ireturn
+
+  public java.util.List<java.lang.Long> getRoles();
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field roles:Ljava/util/List;
+       4: areturn
+
+  public com.kakarote.common.entity.UserInfo setUserId(java.lang.Long);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #4                  // Field userId:Ljava/lang/Long;
+       5: aload_0
+       6: areturn
+
+  public com.kakarote.common.entity.UserInfo setParentId(java.lang.Long);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #7                  // Field parentId:Ljava/lang/Long;
+       5: aload_0
+       6: areturn
+
+  public com.kakarote.common.entity.UserInfo setDeptId(java.lang.Long);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #8                  // Field deptId:Ljava/lang/Long;
+       5: aload_0
+       6: areturn
+
+  public com.kakarote.common.entity.UserInfo setUsername(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #9                  // Field username:Ljava/lang/String;
+       5: aload_0
+       6: areturn
+
+  public com.kakarote.common.entity.UserInfo setMobile(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #10                 // Field mobile:Ljava/lang/String;
+       5: aload_0
+       6: areturn
+
+  public com.kakarote.common.entity.UserInfo setEmail(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #11                 // Field email:Ljava/lang/String;
+       5: aload_0
+       6: areturn
+
+  public com.kakarote.common.entity.UserInfo setUserImg(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #12                 // Field userImg:Ljava/lang/String;
+       5: aload_0
+       6: areturn
+
+  public com.kakarote.common.entity.UserInfo setNickname(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #6                  // Field nickname:Ljava/lang/String;
+       5: aload_0
+       6: areturn
+
+  public com.kakarote.common.entity.UserInfo setLoginType(com.kakarote.common.constant.LoginTypeEnum);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #13                 // Field loginType:Lcom/kakarote/common/constant/LoginTypeEnum;
+       5: aload_0
+       6: areturn
+
+  public com.kakarote.common.entity.UserInfo setLoginTime(java.time.LocalDateTime);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #14                 // Field loginTime:Ljava/time/LocalDateTime;
+       5: aload_0
+       6: areturn
+
+  public com.kakarote.common.entity.UserInfo setUserStatus(com.kakarote.common.constant.UserStatusEnum);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #15                 // Field userStatus:Lcom/kakarote/common/constant/UserStatusEnum;
+       5: aload_0
+       6: areturn
+
+  public com.kakarote.common.entity.UserInfo setPoolId(java.lang.Long);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #16                 // Field poolId:Ljava/lang/Long;
+       5: aload_0
+       6: areturn
+
+  public com.kakarote.common.entity.UserInfo setAdmin(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #17                 // Field admin:Z
+       5: aload_0
+       6: areturn
+
+  public com.kakarote.common.entity.UserInfo setRoles(java.util.List<java.lang.Long>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #18                 // Field roles:Ljava/util/List;
+       5: aload_0
+       6: areturn
+}

@@ -1,0 +1,79 @@
+/* stylelint-disable scss/dollar-variable-pattern */
+/* stylelint-disable property-no-unknown */
+/* stylelint-disable selector-pseudo-class-no-unknown */
+@import "~element-ui/packages/theme-chalk/src/common/var.scss";
+
+$xr-backgroud: #f5f6f9;
+
+// Fallback for custom theme color when using npm element-ui
+$--color-n40: #c1c7d0 !default;
+$--color-n50: #c1c7d0 !default;
+$--color-n0: #ffffff !default;
+$--color-n10: #f5f6f9 !default;
+$--color-n20: #ebecf0 !default;
+$--color-n30: #dfe1e6 !default;
+$--color-n30A: rgba(223, 225, 230, 0.6) !default;
+$--color-n60: #8993a4 !default;
+$--color-n70: #6b778c !default;
+$--color-n80: #5e6c84 !default;
+$--color-n100: #42526e !default;
+$--color-n200: #344563 !default;
+$--color-n300: #253858 !default;
+$--color-n500: #172b4d !default;
+$--color-n600: #091e42 !default;
+$--color-n700: #091e42 !default;
+$--color-n800: #000000 !default;
+$--color-b50: #deebff !default;
+$--color-b100: #b3d4ff !default;
+$--color-b200: #80baff !default;
+$--color-r300: #ff5630 !default;
+$--color-r400: #de350b !default;
+$--color-y50: #fffae6 !default;
+$--color-y400: #ffab00 !default;
+$--color-y300: #ffc400 !default;
+$--color-y500: #ff8b00 !default;
+$--color-g300: #36b37e !default;
+$--color-g400: #00875a !default;
+
+$--border-medium: 1px solid #dcdfe6 !default;
+$--box-shadow-bottom: rgba(9, 30, 66, 0.25) 0 1px 1px, rgba(9, 30, 66, 0.31) 0 0 1px !default;
+$--font-weight-semibold: 600 !default;
+$--font-weight-medium: 500 !default;
+$--font-weight-bold: 700 !default;
+$--font-size-xxlarge: 20px !default;
+$--form-field-default-text-color: #172b4d !default;
+$--form-field-hover-text-color: #091e42 !default;
+$--form-field-hover-bg-color: #f5f7fa !default;
+$--form-field-hover-border-color: #c0c4cc !default;
+$--form-field-focus-bg-color: #ffffff !default;
+$--form-field-focus-border-color: #409eff !default;
+$--border-width-medium: 1px !default;
+$--messagebox-font-weight: 600 !default;
+$--button-hover-background-color: #f5f7fa !default;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  colorPrimary: $--color-primary;
+  colorBlack: $--color-black;
+  colorSuccess: $--color-success;
+  colorWarning: $--color-warning;
+  colorDanger: $--color-danger;
+  colorN40: $--color-n40;
+
+  // echarts
+  axisLineColor: $--color-n40; // 坐标轴
+  axisLabelFontWeight: $--font-weight-primary; // 坐标轴font weight
+}
+
+$--detail-view-top: 0;
+
+// 默认 间隔基础单元
+$--interval-base: 8px;
+
+// 侧滑详情的宽度
+$--detail-width-base: 75%;
+
+// 向下阴影
+$--box-shadow-bottom-light: rgba(9, 30, 66, 0.25) 0 1px 1px, rgba(9, 30, 66, 0.31) 0 0 1px;
+$--box-shadow-hover-bottom-light: rgba(9, 30, 66, 0.25) 0 2px 4px, rgba(9, 30, 66, 0.31) 0 0 1px;

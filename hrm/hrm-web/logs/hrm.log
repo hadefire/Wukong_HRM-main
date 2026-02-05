@@ -1,0 +1,242 @@
+2026-02-05 09:35:00 hrm [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final 
+2026-02-05 09:35:00 hrm [restartedMain] INFO  com.kakarote.hrm.HrmApplication - Starting HrmApplication using Java 17.0.2 on hadefire with PID 28088 (C:\Users\hadef\Project\Wukong_HRM-main\hrm\hrm-web\target\classes started by hadef in C:\Users\hadef\Project\Wukong_HRM-main\hrm\hrm-web) 
+2026-02-05 09:35:00 hrm [restartedMain] INFO  com.kakarote.hrm.HrmApplication - The following 1 profile is active: "core" 
+2026-02-05 09:35:01 hrm [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2026-02-05 09:35:01 hrm [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2026-02-05 09:35:08 hrm [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode 
+2026-02-05 09:35:08 hrm [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2026-02-05 09:35:09 hrm [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 989 ms. Found 0 Redis repository interfaces. 
+2026-02-05 09:35:10 hrm [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=045d0be0-d9ae-361b-be20-569d4036651a 
+2026-02-05 09:35:12 hrm [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used 
+2026-02-05 09:35:12 hrm [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext 
+2026-02-05 09:35:12 hrm [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11829 ms 
+2026-02-05 09:35:13 hrm [restartedMain] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2026-02-05 09:35:13 hrm [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2026-02-05 09:35:15 hrm [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.kakarote.hrm.entity.PO.HrmAppraisalEmployeeRejectRecord". 
+2026-02-05 09:35:15 hrm [restartedMain] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.kakarote.hrm.entity.PO.HrmAppraisalEmployeeRejectRecord ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method. 
+2026-02-05 09:35:28 hrm [restartedMain] INFO  com.alicp.jetcache.autoconfigure.AbstractCacheAutoInit - init cache area default , type= caffeine 
+2026-02-05 09:35:28 hrm [restartedMain] INFO  com.alicp.jetcache.autoconfigure.AbstractCacheAutoInit - init cache area default , type= redis.lettuce 
+2026-02-05 09:35:29 hrm [lettuce-nioEventLoop-6-1] WARN  io.lettuce.core.masterreplica.StaticMasterReplicaTopologyProvider - Cannot connect to redis://******@127.0.0.1 
+io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.RedisClient.lambda$transformAsyncConnectionException$22(RedisClient.java:781)
+	at io.lettuce.core.DefaultConnectionFuture.lambda$thenCompose$1(DefaultConnectionFuture.java:253)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at io.lettuce.core.AbstractRedisClient.lambda$initializeChannelAsync0$6(AbstractRedisClient.java:424)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.CompletionException: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:6379
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:636)
+	... 20 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2026-02-05 09:35:29 hrm [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeCacheUtil': Unsatisfied dependency expressed through field 'cacheManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jcCacheManager' defined in class path resource [com/alicp/jetcache/autoconfigure/JetCacheAutoConfiguration.class]: Unsatisfied dependency expressed through method 'cacheManager' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springConfigProvider' defined in class path resource [com/alicp/jetcache/autoconfigure/JetCacheAutoConfiguration.class]: Unsatisfied dependency expressed through method 'springConfigProvider' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisLettuceAutoInit' defined in class path resource [com/alicp/jetcache/autoconfigure/RedisLettuceAutoConfiguration.class]: Invocation of init method failed; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to [redis://******@127.0.0.1] 
+2026-02-05 09:35:30 hrm [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2026-02-05 09:35:30 hrm [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2026-02-05 09:35:30 hrm [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2026-02-05 09:35:30 hrm [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed 
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeCacheUtil': Unsatisfied dependency expressed through field 'cacheManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jcCacheManager' defined in class path resource [com/alicp/jetcache/autoconfigure/JetCacheAutoConfiguration.class]: Unsatisfied dependency expressed through method 'cacheManager' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springConfigProvider' defined in class path resource [com/alicp/jetcache/autoconfigure/JetCacheAutoConfiguration.class]: Unsatisfied dependency expressed through method 'springConfigProvider' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisLettuceAutoInit' defined in class path resource [com/alicp/jetcache/autoconfigure/RedisLettuceAutoConfiguration.class]: Invocation of init method failed; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to [redis://******@127.0.0.1]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:662)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.kakarote.hrm.HrmApplication.main(HrmApplication.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jcCacheManager' defined in class path resource [com/alicp/jetcache/autoconfigure/JetCacheAutoConfiguration.class]: Unsatisfied dependency expressed through method 'cacheManager' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springConfigProvider' defined in class path resource [com/alicp/jetcache/autoconfigure/JetCacheAutoConfiguration.class]: Unsatisfied dependency expressed through method 'springConfigProvider' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisLettuceAutoInit' defined in class path resource [com/alicp/jetcache/autoconfigure/RedisLettuceAutoConfiguration.class]: Invocation of init method failed; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to [redis://******@127.0.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springConfigProvider' defined in class path resource [com/alicp/jetcache/autoconfigure/JetCacheAutoConfiguration.class]: Unsatisfied dependency expressed through method 'springConfigProvider' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisLettuceAutoInit' defined in class path resource [com/alicp/jetcache/autoconfigure/RedisLettuceAutoConfiguration.class]: Invocation of init method failed; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to [redis://******@127.0.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 38 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisLettuceAutoInit' defined in class path resource [com/alicp/jetcache/autoconfigure/RedisLettuceAutoConfiguration.class]: Invocation of init method failed; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to [redis://******@127.0.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 52 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to [redis://******@127.0.0.1]
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.masterreplica.MasterReplica.getConnection(MasterReplica.java:261)
+	at io.lettuce.core.masterreplica.MasterReplica.connect(MasterReplica.java:175)
+	at com.alicp.jetcache.autoconfigure.RedisLettuceAutoConfiguration$RedisLettuceAutoInit.initCache(RedisLettuceAutoConfiguration.java:91)
+	at com.alicp.jetcache.autoconfigure.AbstractCacheAutoInit.process(AbstractCacheAutoInit.java:69)
+	at com.alicp.jetcache.autoconfigure.AbstractCacheAutoInit.afterPropertiesSet(AbstractCacheAutoInit.java:50)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 65 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Failed to connect to at least one node in [redis://******@127.0.0.1]
+	at io.lettuce.core.masterreplica.StaticMasterReplicaTopologyProvider.lambda$getNodesAsync$1(StaticMasterReplicaTopologyProvider.java:87)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+	at reactor.core.publisher.MonoCollectList$MonoCollectListSubscriber.onComplete(MonoCollectList.java:129)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.checkTerminated(FluxFlatMap.java:847)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:609)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.innerComplete(FluxFlatMap.java:895)
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onComplete(FluxFlatMap.java:998)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onComplete(MonoFlatMap.java:181)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onComplete(Operators.java:2060)
+	at reactor.core.publisher.Operators.complete(Operators.java:137)
+	at reactor.core.publisher.MonoEmpty.subscribe(MonoEmpty.java:46)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4490)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+	at reactor.core.publisher.MonoCompletionStage.lambda$subscribe$0(MonoCompletionStage.java:97)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at io.lettuce.core.DefaultConnectionFuture.lambda$null$0(DefaultConnectionFuture.java:257)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenCompleteStage(CompletableFuture.java:887)
+	at java.base/java.util.concurrent.CompletableFuture.whenComplete(CompletableFuture.java:2325)
+	at java.base/java.util.concurrent.CompletableFuture.whenComplete(CompletableFuture.java:144)
+	at io.lettuce.core.DefaultConnectionFuture.lambda$thenCompose$1(DefaultConnectionFuture.java:254)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at io.lettuce.core.AbstractRedisClient.lambda$initializeChannelAsync0$6(AbstractRedisClient.java:424)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2026-02-05 09:38:14 hrm [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final 
+2026-02-05 09:38:14 hrm [restartedMain] INFO  com.kakarote.hrm.HrmApplication - Starting HrmApplication using Java 17.0.2 on hadefire with PID 19584 (C:\Users\hadef\Project\Wukong_HRM-main\hrm\hrm-web\target\classes started by hadef in C:\Users\hadef\Project\Wukong_HRM-main\hrm\hrm-web) 
+2026-02-05 09:38:14 hrm [restartedMain] INFO  com.kakarote.hrm.HrmApplication - The following 1 profile is active: "core" 
+2026-02-05 09:38:15 hrm [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2026-02-05 09:38:15 hrm [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2026-02-05 09:38:20 hrm [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode 
+2026-02-05 09:38:20 hrm [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2026-02-05 09:38:21 hrm [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 934 ms. Found 0 Redis repository interfaces. 
+2026-02-05 09:38:22 hrm [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=045d0be0-d9ae-361b-be20-569d4036651a 
+2026-02-05 09:38:24 hrm [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used 
+2026-02-05 09:38:24 hrm [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext 
+2026-02-05 09:38:24 hrm [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9251 ms 
+2026-02-05 09:38:24 hrm [restartedMain] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2026-02-05 09:38:24 hrm [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2026-02-05 09:38:26 hrm [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.kakarote.hrm.entity.PO.HrmAppraisalEmployeeRejectRecord". 
+2026-02-05 09:38:26 hrm [restartedMain] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.kakarote.hrm.entity.PO.HrmAppraisalEmployeeRejectRecord ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method. 
+2026-02-05 09:38:40 hrm [restartedMain] INFO  com.alicp.jetcache.autoconfigure.AbstractCacheAutoInit - init cache area default , type= caffeine 
+2026-02-05 09:38:40 hrm [restartedMain] INFO  com.alicp.jetcache.autoconfigure.AbstractCacheAutoInit - init cache area default , type= redis.lettuce 
+2026-02-05 09:38:42 hrm [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2026-02-05 09:38:42 hrm [restartedMain] INFO  org.springframework.cloud.openfeign.FeignClientFactoryBean - For 'admin' URL not provided. Will try picking an instance via load-balancing. 
+2026-02-05 09:38:43 hrm [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html] 
+2026-02-05 09:38:54 hrm [restartedMain] INFO  io.undertow - starting server: Undertow - 2.2.26.Final 
+2026-02-05 09:38:54 hrm [restartedMain] INFO  org.xnio - XNIO version 3.8.7.Final 
+2026-02-05 09:38:54 hrm [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final 
+2026-02-05 09:38:54 hrm [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final 
+2026-02-05 09:38:55 hrm [restartedMain] INFO  org.springframework.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port(s) 44311 (http) 
+2026-02-05 09:38:59 hrm [restartedMain] INFO  com.kakarote.hrm.HrmApplication - Started HrmApplication in 46.02 seconds (JVM running for 47.689) 
+2026-02-05 09:43:10 hrm [XNIO-1 task-1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2026-02-05 09:43:10 hrm [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2026-02-05 09:43:10 hrm [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms 
+2026-02-05 09:43:57 hrm [XNIO-1 task-1] INFO  com.kakarote.hrm.controller.AuthController - 用户登录请求: username=13800000000 
+2026-02-05 09:43:58 hrm [XNIO-1 task-1] INFO  com.kakarote.hrm.service.impl.AuthServiceImpl - 登录成功: employeeId=1559019593470803969, employeeName=刘1 
+2026-02-05 10:06:40 hrm [XNIO-1 task-3] INFO  com.kakarote.hrm.controller.AuthController - 用户登录请求: username=13800000000 
+2026-02-05 10:06:40 hrm [XNIO-1 task-3] INFO  com.kakarote.hrm.service.impl.AuthServiceImpl - 登录成功: employeeId=1559019593470803969, employeeName=刘1 

@@ -1,0 +1,2 @@
+Summary for C:\Users\hadef\Project\Wukong_HRM-main\hrm\hrm-web\src\main\resources\lib\provider-1.0.1.jar
+Decompiled with CFR 0.152
