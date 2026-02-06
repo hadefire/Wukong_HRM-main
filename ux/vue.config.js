@@ -32,7 +32,7 @@ module.exports = {
     port: port,
     proxy: {
       '/': {
-        target: 'http://localhost:44311',
+        target: 'http://localhost:28080',
         changeOrigin: true,
         ws: true,
         // 排除静态资源，只代理API请求

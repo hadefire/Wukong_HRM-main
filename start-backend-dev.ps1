@@ -8,14 +8,14 @@ $env:Path = "$env:JAVA_HOME\bin;$env:Path"
 Set-Location "$PSScriptRoot\hrm\hrm-web"
 
 # 尝试终止占用端口的进程（忽略错误）
-Get-NetTCPConnection -LocalPort 44311 2>$null | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force 2>$null }
+Get-NetTCPConnection -LocalPort 28080 2>$null | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force 2>$null }
 
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host "  HRM Backend - Development Mode" -ForegroundColor Cyan
 Write-Host "  (with Spring Boot DevTools)" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
-Write-Host "Server URL: http://localhost:44311" -ForegroundColor Green
+Write-Host "Server URL: http://localhost:28080" -ForegroundColor Green
 Write-Host "JAVA_HOME: $env:JAVA_HOME" -ForegroundColor Yellow
 & "$env:JAVA_HOME\bin\java.exe" -version
 Write-Host ""

@@ -230,7 +230,7 @@ sh 72crm.sh start
 #### 1.接口文档<br/>
 
 ```
-接口文档地址：http://localhost:44311/doc.html
+接口文档地址：http://localhost:28080/doc.html
 ```
 
 

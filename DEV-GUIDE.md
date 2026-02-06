@@ -15,7 +15,7 @@ $env:Path="$env:JAVA_HOME\bin;$env:Path"
 java -jar hrm\hrm-web\target\hrm-web-0.0.1-SNAPSHOT.jar
 ```
 
-后端启动后访问: http://localhost:44311
+后端启动后访问: http://localhost:28080
 
 ### 2. 启动前端开发服务器（Terminal 2）
 
@@ -68,7 +68,7 @@ npm run build
 ### 前端开发模式 (`npm run dev`)
 - 端口: 8090
 - 热重载: 代码修改后自动刷新
-- API 代理: 自动转发到后端 http://localhost:44311
+- API 代理: 自动转发到后端 http://localhost:28080
 - 登录: 不会强制每次刷新重新登录
 
 ### 生产模式
