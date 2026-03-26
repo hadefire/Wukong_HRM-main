@@ -10,3 +10,4 @@ target
 */target/**
 rebel.xml
 rebel-remote.xml
+*.log
